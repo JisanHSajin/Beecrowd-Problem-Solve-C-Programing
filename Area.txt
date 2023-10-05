@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double A,B,C,n,X,Y,Z,Q,R;
+    n=3.14159;
+
+    scanf("%lf %lf %lf",&A,&B,&C);
+
+	X=A*C*0.5;
+	Y=n*C*C;
+	Z=(A+B)*C*0.5;
+	Q=B*B;
+	R=A*B;
+
+    printf("TRIANGULO: %0.3lf\n",X);
+    printf("CIRCULO: %0.3lf\n",Y);
+    printf("TRAPEZIO: %0.3lf\n",Z);
+    printf("QUADRADO: %0.3lf\n",Q);
+    printf("RETANGULO: %0.3lf\n",R);
+
+    return 0;
+}
