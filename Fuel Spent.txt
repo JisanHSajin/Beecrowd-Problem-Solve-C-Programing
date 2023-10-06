@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int t,s;
+    float r;
+    scanf("%d %d",&t,&s);
+    
+    r=t*s*0.0833333;
+    
+    printf("%0.3f\n",r);
+    return 0;
+}
