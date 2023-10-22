@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double A,B,C,R1,R2,a,b,c;
+    
+    scanf("%lf %lf %lf",&A,&B,&C);
+    
+    a=(B*B)-(4*A*C);
+    b= pow(a,0.5);
+    c=2*A;
+    R1=(-B+b)/c;
+    R2=(-B-b)/c;
+    
+    if(a<0 || c==0)
+    {
+        printf("Impossivel calcular\n");
+    }
+    else
+    {
+        printf("R1 = %.5lf\n",R1);
+        printf("R2 = %.5lf\n",R2);
+    }
+
+    return 0;
+}
