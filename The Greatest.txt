@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,g;
+    
+    scanf("%d %d %d",&a,&b,&c);
+    
+    g=a;
+    
+    if(a<b || a<c)
+    {
+        if(b<c)
+        {
+        g=c;
+        }
+    else
+    {
+        g=b;
+        
+    }
+    }
+    printf("%d eh o maior\n",g);
+    
+    return 0;
+}
