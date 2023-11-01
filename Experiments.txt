@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    int N,i,a,sc,sr,ss,t;
+    char c;
+    sc=0;
+    sr=0;
+    ss=0;
+    t=0;
+    
+    scanf("%d",&N);
+    
+    for(i=1;i<=N;i++)
+    {
+        scanf("%d %c",&a,&c);
+        if(c=='C')
+        {
+            t=t+a;
+            sc=sc+a;
+        }
+        else if(c=='R')
+        {
+            t=t+a;
+            sr=sr+a;
+        }
+        else
+        {
+            t=t+a;
+            ss=ss+a;
+        }
+    }
+    printf("Total: %d cobaias\n",t);
+    printf("Total de coelhos: %d\n",sc);
+    printf("Total de ratos: %d\n",sr);
+    printf("Total de sapos: %d\n",ss);
+    
+    double T=t;
+    double SC=sc;
+    double SR=sr;
+    double SS=ss;
+    
+    printf("Percentual de coelhos: %.2lf %\n",((SC/T)*100));
+    printf("Percentual de ratos: %.2f %\n",((SR/T)*100));
+    printf("Percentual de sapos: %.2f %\n",((SS/T)*100));
+    
+    return 0;
+}
