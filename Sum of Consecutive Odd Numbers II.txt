@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+    int M,N,i,s,j,Q;
+    
+    scanf("%d",&Q);
+    
+    for(j=1;j<=Q;j++)
+    {
+        s=0;
+        
+        scanf("%d %d",&M,&N);
+        
+        if(M<N)
+        {
+            for(i=M+1;i<N;i++)
+            {
+                if(i%2!=0)
+                {
+                    s=s+i;
+                }
+            }
+            printf("%d\n",s);
+        }
+        else
+        {
+            for(i=N+1;i<M;i++)
+            {
+                if(i%2!=0)
+                {
+                    s=s+i;
+                }
+            }
+            printf("%d\n",s);
+        }
+    }
+    return 0;
+}
