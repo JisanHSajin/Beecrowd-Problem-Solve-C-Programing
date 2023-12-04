@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int N,Y,i,a,b,j;
+    a=1;
+    b=3;
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        for(j=a;j<=b;j++)
+        {
+            printf("%d ",j);
+        }
+        printf("PUM\n");
+        a=a+4;
+        b=b+4;
+    }
+    return 0;
+}
