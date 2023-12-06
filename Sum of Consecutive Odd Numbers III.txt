@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main()
+{
+    int X,Y,i,sum,j,N;
+    
+    scanf("%d",&N);
+    
+    for(j=1;j<=N;j++)
+    {
+        sum=0;
+        
+        scanf("%d %d",&X,&Y);
+    
+        if(X%2==0)
+        {
+            for(i=X;i<=X+Y*2;i++)
+            {
+                if(i%2==0)
+                {
+            
+                }
+                else
+                {
+                    sum=sum+i;
+                }
+            }
+        }
+        else
+        {
+            for(i=X-1;i<=X-1+Y*2;i++)
+            {
+                if(i%2==0)
+                {
+            
+                }
+                else
+                {
+                    sum=sum+i;
+                }
+            }
+        }
+        printf("%d\n",sum);
+    }
+    return 0;
+}
