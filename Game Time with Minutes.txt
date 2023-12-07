@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,t;
+
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    
+    t=((c*60)+d)-((a*60)+b);
+    
+    if(t<=0)
+    {
+        t=t+1440;
+    }
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", t/60, t%60);
+    return 0;
+}
