@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int N,i,x,y;
+    
+    scanf("%d",&N);
+    
+    int X[N];
+    
+    for(i=0;i<N;i++)
+    {
+        scanf("%d",&X[i]);
+        if(i==0)
+        {
+            x=X[0];
+            y=i;
+        }
+        else
+        {
+            if(X[i]<x)
+        {
+            x=X[i];
+            y=i;
+        }
+        }
+    }
+    printf("Menor valor: %d\nPosicao: %d\n",x,y);
+    
+    return 0;
+}
